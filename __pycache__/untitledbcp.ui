@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1092</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>909</x>
+     <y>10</y>
+     <width>171</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="RunLayout">
+    <item>
+     <widget class="QLabel" name="RunLabel">
+      <property name="text">
+       <string>Run</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="SelectBox">
+      <item>
+       <property name="text">
+        <string>GPUGraphX</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GraphX</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="RunBotton">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTabWidget" name="Tab">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>1071</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="OverallBox">
+    <attribute name="title">
+     <string>Overall</string>
+    </attribute>
+    <widget class="QComboBox" name="SelectGraph">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Global statistics</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Runtime percentage</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>39</y>
+       <width>1051</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>GroupBox</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>1031</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="OverallLayout"/>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="PartitionBox">
+    <attribute name="title">
+     <string>Partition</string>
+    </attribute>
+    <widget class="QCheckBox" name="CheckPartition">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>12</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Partition</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CheckIterator">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>13</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Iterater</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="CanvasBox">
+     <property name="geometry">
+      <rect>
+       <x>222</x>
+       <y>12</y>
+       <width>841</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>GroupBox</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>19</y>
+        <width>831</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="PartitionLayout"/>
+     </widget>
+    </widget>
+    <widget class="QTreeWidget" name="SelectPartition">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>201</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Select Partition</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>check</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Partition 0</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Partition 1</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Partition 2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Partition 3</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QTreeWidget" name="SelectIterator">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>201</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <attribute name="headerDefaultSectionSize">
+      <number>40</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Iter</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ver</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Edge</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Com</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Total</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="LogMessageBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>480</y>
+     <width>1071</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Log Message</string>
+   </property>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1051</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SelectGraph</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>92</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RunBotton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>671</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CheckIterator</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CheckPartition</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SelectIterator</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>545</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SelectPartition</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>545</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
